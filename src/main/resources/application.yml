@@ -1,0 +1,22 @@
+server:
+    port: 8081
+spring:
+    thymeleaf:
+        prefix: file:src/main/resources/templates/
+    jpa:
+        database-platform: org.hibernate.dialect.PostgreSQLDialect
+        #database-platform: org.hibernate.dialect.MySQLDialect
+        open-in-view: false
+        hibernate:
+            ddl-auto: none
+    datasource:
+        driver-class-name: org.postgresql.Driver
+        #driver-class-name: com.mysql.cj.jdbc.Driver
+        url: jdbc:postgresql://ec2-34-205-14-168.compute-1.amazonaws.com:5432/d10o80am8i5ls6
+        #url: jdbc:mysql://localhost:3306/p_ventas
+        username: vsvgvqkmjpbuap
+        password: 45b4961417d9e63a8ac7caca0dfca29a22157abcbdf029fbe34e00c91dae0a46
+    flyway:
+        url: jdbc:postgresql://ec2-34-205-14-168.compute-1.amazonaws.com:5432/d10o80am8i5ls6
+        user: vsvgvqkmjpbuap
+        password: 45b4961417d9e63a8ac7caca0dfca29a22157abcbdf029fbe34e00c91dae0a46
